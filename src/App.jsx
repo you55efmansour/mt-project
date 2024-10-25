@@ -37,7 +37,7 @@ function App() {
               <>
                 <NavBar tok = {token? true : false} />
                 <div className="mb-5 pb-4">
-                  <Catego/>
+                  <Catego tok = {token? true : false}/>
                 </div>
                 <Footer/>
               </>
