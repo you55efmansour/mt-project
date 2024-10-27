@@ -4,59 +4,16 @@ function Footer() {
     <div className="text-light footer">
       <div className="container py-4">
         <div className="row justify-content-between">
-          {/* col1 */}
-          <div className=" d-none d-md-block d-lg-block col-md-6 col-lg-3 overflow-hidden">
-            <h1 className="fs-6 fw-bold">Exclusive</h1>
-            <p className="mt-3">Subscribe</p>
-            <p className="text-white-50 fs-s">Get 10% off your first order</p>
-            <form className=" border border rounded position-relative d-none d-md-block d-lg-block">
-              <input type="e-mail" placeholder="Enter your email" className="p-2 w-75 text-light fs-6"/>
-              <div className="btn position-absolute top-0 p-2 end-0 text-light send"><i className="fa-regular fa-paper-plane"></i></div>
-            </form>
-          </div>
-          {/* col2 */}
-          <div className="d-none d-lg-block col-2 overflow-hidden">
-            <h1 className="fs-6 fw-bold">Support</h1>
-            <ul className="d-flex flex-column gap-3 mt-3">
-              <li>111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</li>
-              <li>exclusive@gmail.com</li>
-              <li>+88015-88888-9999</li>
-            </ul>
-          </div>
-          {/* col3 */}
-          <div className="d-none d-lg-block col-2 overflow-hidden">
-            <h1 className="fs-6 fw-bold">Account</h1>
-            <ul className="d-flex flex-column gap-3 mt-3">
-              <li>My Account</li>
-              <li>Login / Register</li>
-              <li>Cart</li>
-              <li>Wishlist</li>
-              <li>Shop</li>
-            </ul>
-          </div>
-          {/* col4 */}
-          <div className="d-none d-lg-block col-2 overflow-hidden">
-            <h1 className="fs-6 fw-bold">Quick Link</h1>
-            <ul className="d-flex flex-column gap-3 mt-3">
-              <li>Privacy Policy</li>
-              <li>Terms Of Use</li>
-              <li>FAQ</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-          {/* col5 */}
-          <div className="col-12 col-md-6 col-lg-3 overflow-hidden d-flex flex-column kustify-content-center align-items-center">
-            <h1 className="fs-6 fw-bold">Download </h1>
-            <div className="mt-3 fs-s text-white-50">Save $3 with  New User Only</div>
+          <div className="col-12 overflow-hidden d-flex flex-column kustify-content-center align-items-center">
+            <h1 className="fs-6 fw-bold">Contact Us :</h1>
             <div className="imgs d-flex gap-2 mt-3">
               <div className="store d-flex flex-column align-items-center">
               </div>
             </div>
             <ul className='d-flex gap-4 mt-3'>
-              <li><Link className='text-light'><i className="fa-brands fa-facebook-f"></i></Link></li>
-              <li><Link className='text-light'><i className="fa-brands fa-x-twitter"></i></Link> </li>
-              <li><Link className='text-light'><i className="fa-brands fa-instagram"></i></Link> </li>
-              <li><Link className='text-light'><i className="fa-brands fa-linkedin-in"></i></Link></li>
+              <li><Link to={"https://www.facebook.com/profile.php?id=61550551316720&mibextid=LQQJ4d"} target='_blank' className='contact-us'><i className="fa-brands fs-3 fa-facebook-f"></i></Link></li>
+              <li><Link to={"https://www.instagram.com/touch.mt/profilecard/?igsh=NW91Z28yOTF2ZGxj"} target='_blank' className='contact-us'><i className="fa-brands fs-3 fa-instagram"></i></Link> </li>
+              <li><Link to={"https://wa.me/+201026016452"} target='_blank' className='contact-us'><i className="fa-brands fs-3 fa-whatsapp"></i></Link> </li>
             </ul>
           </div>
         </div>

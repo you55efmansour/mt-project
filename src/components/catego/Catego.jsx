@@ -18,6 +18,7 @@ function Catego(prop){
   const [file, setFile] = useState(null);
   const [message, setMessage] = useState("");
   const [images, setImages] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const handleFileChange = (event) => {
     setFile(event.target.files[0]);
@@ -78,6 +79,7 @@ function Catego(prop){
         ...doc.data(),
       }));
       setImages(imageData);
+      setLoading(false)
     };
 
     fetchImages();
@@ -129,8 +131,8 @@ function Catego(prop){
         {message && <p className="mt-3 text-success">{message}</p>}
         </>}
       <div className="row">
-                {images.reverse().map(({ id, url }) => (
-                    <div key={id} className="col-12 col-md-4 my-4">
+                {loading?<i className="fa-solid fa-spinner mt-5 fa-spin"></i>: images.reverse().map(({ id, url }) => (
+                    <div data-aos="flip-left" key={id} className="col-12 col-md-4 my-4">
                         <div className="card border-0">
                             <img
                                 src={url}

@@ -12,7 +12,7 @@ function App() {
   
   const location = useLocation()
   return (
-  <>
+  <div className="overflow-hidden">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={
               <>
@@ -61,7 +61,7 @@ function App() {
               </>
             }/>
           </Routes>
-  </>
+  </div>
   );
 }
 

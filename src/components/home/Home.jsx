@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import land from "../../imgs/land.jpg";
 import img1 from "../../imgs/1.jpg";
 import img2 from "../../imgs/2.jpg";
@@ -14,7 +14,6 @@ import { Helmet } from 'react-helmet';
 import { Link } from "react-router-dom";
 
 function Home() {
-
   return (
     <div className="home border-top">
       <Helmet>
@@ -24,7 +23,7 @@ function Home() {
       <div className="container">
         {/* frist section */}
         <div className="row justify-content-between mb-5">
-          <div className="landing-image">
+          <div className="landing-image d-flex justify-content-center">
             <img className="img-fluid h-100" src={land} alt="" />
           </div>
           <div>
@@ -46,37 +45,37 @@ function Home() {
         {/* second section */}
         <div className="catego row">
           {/* box start */}
-          <Link to={"/catego/entrances"} className="col-12 box overflow-hidden">
+          <Link data-aos="fade-right" to={"/catego/entrances"} className="col-12 col-md-6 col-lg-6  box overflow-hidden mt-5">
             <img className="img-fluid rounded" src={img1} alt="" />
           </Link>
           {/* box end */}
           {/* box start */}
-          <Link to={"/seating"} className="col-12 box overflow-hidden mt-5">
+          <Link data-aos="fade-right" to={"/seating"} className="col-12 col-md-6 col-lg-6 box overflow-hidden mt-5">
             <img className="img-fluid rounded" src={img2} alt="" />
           </Link>
           {/* box end */}
           {/* box start */}
-          <Link to={"/catego/centerpieces"} className="col-12 box overflow-hidden mt-5">
+          <Link data-aos="fade-right" to={"/catego/centerpieces"} className="col-12 col-md-6 col-lg-6 box overflow-hidden mt-5">
             <img className="img-fluid rounded" src={img3} alt="" />
           </Link>
           {/* box end */}
           {/* box start */}
-          <Link to={"/catego/backdrop"} className="col-12 box overflow-hidden mt-5">
+          <Link data-aos="fade-right" to={"/catego/backdrop"} className="col-12 col-md-6 col-lg-6 box overflow-hidden mt-5">
             <img className="img-fluid rounded" src={img4} alt="" />
           </Link>
           {/* box end */}
           {/* box start */}
-          <Link to={"/catego/dance-floor"} className="col-12 box overflow-hidden mt-5">
+          <Link data-aos="fade-right" to={"/catego/dance-floor"} className="col-12 col-md-6 col-lg-6 box overflow-hidden mt-5">
             <img className="img-fluid rounded" src={img5} alt="" />
           </Link>
           {/* box end */}
           {/* box start */}
-          <Link to={"/catego/sealing"} className="col-12 box overflow-hidden mt-5">
+          <Link data-aos="fade-right" to={"/catego/sealing"} className="col-12 col-md-6 col-lg-6 box overflow-hidden mt-5">
             <img className="img-fluid rounded" src={img6} alt="" />
           </Link>
           {/* box end */}
           {/* box start */}
-          <Link to={"/catego/decoration"} className="col-12 box overflow-hidden mt-5">
+          <Link data-aos="fade-right" to={"/catego/decoration"} className="col-12 col-md-6 col-lg-6 box overflow-hidden mt-5">
             <img className="img-fluid rounded" src={img7} alt="" />
           </Link>
           {/* box end */}

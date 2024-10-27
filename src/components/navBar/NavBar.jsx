@@ -8,7 +8,7 @@ function NavBar(prop) {
           <div className="container d-flex justify-content-between ">
             {!talls&&
             <Link className="navbar-brand fw-bold" to="#">
-              MT
+              Touch MT
             </Link>
             }
             {talls&&
