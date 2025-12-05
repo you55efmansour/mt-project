@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../../imgs/mt logo.jpeg";
 function NavBar(prop) {
   let {tok , talls} = prop
   return (
@@ -8,7 +9,7 @@ function NavBar(prop) {
           <div className="container d-flex justify-content-between ">
             {!talls&&
             <Link className="navbar-brand fw-bold" to="#">
-              Touch MT
+              <img className="img-fluid logo overflow-hidden rounded-circle" src={logo} alt="img" />
             </Link>
             }
             {talls&&
